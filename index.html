@@ -25,7 +25,11 @@
 				</h2>
 				<nav class="header-nav">
 					<ul class="nav-list">
-						<li><a class="header-nav-link active-link" href="index.html">Agencja</a></li>
+						<li>
+							<a class="header-nav-link active-link" href="index.html"
+								>Agencja</a
+							>
+						</li>
 						<li>
 							<a class="header-nav-link" href="portfolio.html" target="_self"
 								>Portfolio</a
@@ -62,9 +66,16 @@
 					<h1 class="solution-header">
 						EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
 					</h1>
-					<button class="button-solution click" type="button">
+					<button class="button-solution click" type="button" data-modal-open>
 						Zamów usługę
 					</button>
+					<div class="is-hidden modal-backdrop" data-modal>
+						<section class="modal-content">
+							<svg class="modal-escape" data-modal-close>
+								<use href="./images/icons.svg#modal-close-icon"></use>
+							</svg>
+						</section>
+					</div>
 				</div>
 			</section>
 			<div class="container">
@@ -124,28 +135,43 @@
 						<h2 class="specialize section-header">Czym się zajmujemy</h2>
 						<ul class="specialize-list">
 							<li>
-								<img
-									src="images/activities-comp.jpg"
-									alt="Pisanie kodu"
-									width="370"
-									height="294"
-								/>
+								<div class="specialize-box relative">
+									<img
+										src="images/activities-comp.jpg"
+										alt="Pisanie kodu"
+										width="370"
+										height="294"
+									/>
+									<div class="activities-description">
+										<p class="activities-text">Aplikacje komputerowe</p>
+									</div>
+								</div>
 							</li>
 							<li>
-								<img
-									src="images/activities-phone.jpg"
-									alt="Osoba projektująca interface iOS"
-									width="370"
-									height="294"
-								/>
+								<div class="specialize-box relative">
+									<img
+										src="images/activities-phone.jpg"
+										alt="Osoba projektująca interface iOS"
+										width="370"
+										height="294"
+									/>
+									<div class="activities-description">
+										<p class="activities-text">Aplikacje mobilne</p>
+									</div>
+								</div>
 							</li>
 							<li>
-								<img
-									src="images/activities-rgb.jpg"
-									alt="Paleta kolorów rgb"
-									width="370"
-									height="294"
-								/>
+								<div class="specialize-box relative">
+									<img
+										src="images/activities-rgb.jpg"
+										alt="Paleta kolorów rgb"
+										width="370"
+										height="294"
+									/>
+									<div class="activities-description">
+										<p class="activities-text">Rozwiązania graficzne</p>
+									</div>
+								</div>
 							</li>
 						</ul>
 					</div>
@@ -168,33 +194,43 @@
 										<h4 class="team-name-header">John Doe</h4>
 										<p class="team-name-description">Product Designer</p>
 										<div class="team-media-symbols">
-											<ul  class="team-icons-social">
+											<ul class="team-icons-social">
 												<li>
 													<div class="team-icons-social-bg">
 														<svg class="instagram-logo icons-social">
-															<use href="images/icons.svg#instagram-symbol"></use>
+															<use
+																href="images/icons.svg#instagram-symbol"
+															></use>
 														</svg>
 													</div>
 												</li>
 												<li>
 													<div class="team-icons-social-bg">
-													<svg class="twitter-logo icons-social">
-														<use href="images/icons.svg#twitter-symbol"></use>
-													</svg>
+														<svg class="twitter-logo icons-social">
+															<use href="images/icons.svg#twitter-symbol"></use>
+														</svg>
 													</div>
 												</li>
 												<li>
 													<div class="team-icons-social-bg">
-													<svg class="facebook-logo icons-social">
-														<use href="images/icons.svg#facebook-symbol"></use>
-													</svg>
+														<svg class="facebook-logo icons-social">
+															<use
+																href="images/icons.svg#facebook-symbol"
+															></use>
+														</svg>
 													</div>
 												</li>
 												<li>
 													<div class="team-icons-social-bg">
-													<svg class="linked-logo icons-social" width="44" height="44">
-														<use href="images/icons.svg#linkedin-symbol"></use>
-													</svg>
+														<svg
+															class="linked-logo icons-social"
+															width="44"
+															height="44"
+														>
+															<use
+																href="images/icons.svg#linkedin-symbol"
+															></use>
+														</svg>
 													</div>
 												</li>
 											</ul>
@@ -214,33 +250,43 @@
 										<h4 class="team-name-header">John Doe</h4>
 										<p class="team-name-description">Frontend Developer</p>
 										<div class="team-media-symbols">
-											<ul  class="team-icons-social">
+											<ul class="team-icons-social">
 												<li>
 													<div class="team-icons-social-bg">
 														<svg class="instagram-logo icons-social">
-															<use href="images/icons.svg#instagram-symbol"></use>
+															<use
+																href="images/icons.svg#instagram-symbol"
+															></use>
 														</svg>
 													</div>
 												</li>
 												<li>
 													<div class="team-icons-social-bg">
-													<svg class="twitter-logo icons-social">
-														<use href="images/icons.svg#twitter-symbol"></use>
-													</svg>
+														<svg class="twitter-logo icons-social">
+															<use href="images/icons.svg#twitter-symbol"></use>
+														</svg>
 													</div>
 												</li>
 												<li>
 													<div class="team-icons-social-bg">
-													<svg class="facebook-logo icons-social">
-														<use href="images/icons.svg#facebook-symbol"></use>
-													</svg>
+														<svg class="facebook-logo icons-social">
+															<use
+																href="images/icons.svg#facebook-symbol"
+															></use>
+														</svg>
 													</div>
 												</li>
 												<li>
 													<div class="team-icons-social-bg">
-													<svg class="linked-logo icons-social" width="44" height="44">
-														<use href="images/icons.svg#linkedin-symbol"></use>
-													</svg>
+														<svg
+															class="linked-logo icons-social"
+															width="44"
+															height="44"
+														>
+															<use
+																href="images/icons.svg#linkedin-symbol"
+															></use>
+														</svg>
 													</div>
 												</li>
 											</ul>
@@ -260,33 +306,43 @@
 										<h4 class="team-name-header">John Doe</h4>
 										<p class="team-name-description">Marketing</p>
 										<div class="team-media-symbols">
-											<ul  class="team-icons-social">
+											<ul class="team-icons-social">
 												<li>
 													<div class="team-icons-social-bg">
 														<svg class="instagram-logo icons-social">
-															<use href="images/icons.svg#instagram-symbol"></use>
+															<use
+																href="images/icons.svg#instagram-symbol"
+															></use>
 														</svg>
 													</div>
 												</li>
 												<li>
 													<div class="team-icons-social-bg">
-													<svg class="twitter-logo icons-social">
-														<use href="images/icons.svg#twitter-symbol"></use>
-													</svg>
+														<svg class="twitter-logo icons-social">
+															<use href="images/icons.svg#twitter-symbol"></use>
+														</svg>
 													</div>
 												</li>
 												<li>
 													<div class="team-icons-social-bg">
-													<svg class="facebook-logo icons-social">
-														<use href="images/icons.svg#facebook-symbol"></use>
-													</svg>
+														<svg class="facebook-logo icons-social">
+															<use
+																href="images/icons.svg#facebook-symbol"
+															></use>
+														</svg>
 													</div>
 												</li>
 												<li>
 													<div class="team-icons-social-bg">
-													<svg class="linked-logo icons-social" width="44" height="44">
-														<use href="images/icons.svg#linkedin-symbol"></use>
-													</svg>
+														<svg
+															class="linked-logo icons-social"
+															width="44"
+															height="44"
+														>
+															<use
+																href="images/icons.svg#linkedin-symbol"
+															></use>
+														</svg>
 													</div>
 												</li>
 											</ul>
@@ -306,33 +362,43 @@
 										<h4 class="team-name-header">John Doe</h4>
 										<p class="team-name-description">UI Designer</p>
 										<div class="team-media-symbols">
-											<ul  class="team-icons-social">
+											<ul class="team-icons-social">
 												<li>
 													<div class="team-icons-social-bg">
 														<svg class="instagram-logo icons-social">
-															<use href="images/icons.svg#instagram-symbol"></use>
+															<use
+																href="images/icons.svg#instagram-symbol"
+															></use>
 														</svg>
 													</div>
 												</li>
 												<li>
 													<div class="team-icons-social-bg">
-													<svg class="twitter-logo icons-social">
-														<use href="images/icons.svg#twitter-symbol"></use>
-													</svg>
+														<svg class="twitter-logo icons-social">
+															<use href="images/icons.svg#twitter-symbol"></use>
+														</svg>
 													</div>
 												</li>
 												<li>
 													<div class="team-icons-social-bg">
-													<svg class="facebook-logo icons-social">
-														<use href="images/icons.svg#facebook-symbol"></use>
-													</svg>
+														<svg class="facebook-logo icons-social">
+															<use
+																href="images/icons.svg#facebook-symbol"
+															></use>
+														</svg>
 													</div>
 												</li>
 												<li>
 													<div class="team-icons-social-bg">
-													<svg class="linked-logo icons-social" width="44" height="44">
-														<use href="images/icons.svg#linkedin-symbol"></use>
-													</svg>
+														<svg
+															class="linked-logo icons-social"
+															width="44"
+															height="44"
+														>
+															<use
+																href="images/icons.svg#linkedin-symbol"
+															></use>
+														</svg>
 													</div>
 												</li>
 											</ul>
@@ -409,39 +475,39 @@
 				</div>
 				<div>
 					<h3 class="join-footer-header service-header">Dołącz do nas</h3>
-				<ul class="join-footer-list flex list-style-none">
-					<li>
-						<div class="team-icons-social-bg footer-social-bg">
-							<svg class="icons-social footer-icons-color">
-								<use href="images/icons.svg#instagram-symbol"></use>
-							</svg>
-						</div>
-					</li>
-					<li>
-					<div class="team-icons-social-bg footer-social-bg">
-							<svg class="icons-social footer-icons-color">
-								<use href="images/icons.svg#twitter-symbol"></use>
-							</svg>
-						</div>
-					</li>
-					<li>
-						<div class="team-icons-social-bg footer-social-bg">
-							<svg class="icons-social footer-icons-color">
-								<use href="images/icons.svg#facebook-symbol"></use>
-							</svg>
-						</div>
-					</li>
-					<li>
-						<div class="team-icons-social-bg footer-social-bg">
-							<svg class="icons-social footer-icons-color">
-								<use href="images/icons.svg#linkedin-symbol"></use>
-							</svg>
-						</div>
-					</li>
-				</ul>
+					<ul class="join-footer-list flex list-style-none">
+						<li>
+							<div class="team-icons-social-bg footer-social-bg">
+								<svg class="icons-social footer-icons-color">
+									<use href="images/icons.svg#instagram-symbol"></use>
+								</svg>
+							</div>
+						</li>
+						<li>
+							<div class="team-icons-social-bg footer-social-bg">
+								<svg class="icons-social footer-icons-color">
+									<use href="images/icons.svg#twitter-symbol"></use>
+								</svg>
+							</div>
+						</li>
+						<li>
+							<div class="team-icons-social-bg footer-social-bg">
+								<svg class="icons-social footer-icons-color">
+									<use href="images/icons.svg#facebook-symbol"></use>
+								</svg>
+							</div>
+						</li>
+						<li>
+							<div class="team-icons-social-bg footer-social-bg">
+								<svg class="icons-social footer-icons-color">
+									<use href="images/icons.svg#linkedin-symbol"></use>
+								</svg>
+							</div>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</footer>
-		<script src="main.js"></script>
+		<script src="./js/modal.js"></script>
 	</body>
 </html>
